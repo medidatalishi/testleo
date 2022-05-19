@@ -1,0 +1,32 @@
+DECLARE @StudyID int
+, @UserID int
+, @RoleID int
+, @UserLogin varchar(50) = 'SUMEETHIREMATH%'
+, @RoleName varchar(255) = 'Power User'
+, @ProjectName varchar(255) = 'LP0162-1346'
+
+SELECT @RoleID = r.RoleID FROM Roles r WHERE dbo.fnLocalDefault(r.RoleNameID) = @RoleName AND r.Active = 1
+
+SELECT @UserID = UserID FROM Users WHERE Login like @UserLogin AND AccountRoleID = @RoleID AND UserActive = 1
+
+SELECT @StudyID = StudyID FROM Projects p
+INNER JOIN Studies st ON p.ProjectID=st.ProjectID AND p.ProjectActive = 1 AND st.StudyActive = 1 AND st.Deleted = 0
+WHERE st.TestStudy = 0 AND dbo.fnLocalDefault(ProjectName) = @ProjectName
+AND EXISTS (SELECT 1 FROM UserStudyRole usr WHERE usr.StudyId = st.StudyID
+AND usr.RoleId = @RoleID AND usr.Userid = @UserID AND usr.Active = 1)
+
+EXEC [dbo].[spRptAuditTrailReport]
+@st = @StudyID, --study id
+@sg ='1,1', -- <SiteGroup>,<IncludeChildren>
+@si = NULL, --comma-delimited list of site ids
+@su = NULL, --comma-delimited list of subject ids
+@fl2 = NULL, --comma-delimited list of folder ids
+@fm2 = NULL, --comma-delimited list of form ids
+@fe2 = NULL, --comma-delimited list of field ids
+@un = NULL, --comma-delimited list of user ids
+@rn = NULL, --comma-delimited list of role ids
+@at = NULL, --comma-delimited list of audit actions type id
+@sd = NULL, --start date
+@ed = NULL, --end date
+@uid = @UserID,--user id of the user requesting the report
+@rid = @RoleID
