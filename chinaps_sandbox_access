@@ -17,8 +17,6 @@ access:
   - read_study_environments
   - read_team_memberships
   operables:
-  - uri: com:mdsol:client_division_schemes:7bc7e541-456c-45be-bb0b-6f167d730ecf
-  - uri: com:mdsol:client_division_schemes:all
   - uri: com:mdsol:client_division_schemes_collection:all
 - name: User Impersonator
   operations:
