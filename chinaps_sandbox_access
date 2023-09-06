@@ -25,3 +25,8 @@ access:
   - impersonate
   operables:
   - uri: com:mdsol:users_collection:all
+- name: External App User Access Remover
+  operations:
+  - write
+  operables:
+  - uri: com:mdsol:client_division_schemes:all
