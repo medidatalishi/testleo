@@ -28,3 +28,8 @@ access:
   - write
   operables:
   - uri: com:mdsol:client_division_schemes:all
+- name: Depot Reader Unblinded
+  operations:
+  - read_unblinded
+  operables:
+  - uri: com:mdsol:depots_collections:all
