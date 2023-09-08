@@ -32,4 +32,4 @@ access:
   operations:
   - read_unblinded
   operables:
-  - uri: com:mdsol:depots_collections:all
+  - uri: com:mdsol:depots:d0e33e87-553b-4b11-99c1-72bfde9072f7
