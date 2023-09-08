@@ -32,4 +32,20 @@ access:
   operations:
   - read_unblinded
   operables:
-  - uri: com:mdsol:depots:d0e33e87-553b-4b11-99c1-72bfde9072f7
+  - uri: com:mdsol:depots:2f39513a-f93f-4733-84bf-25a0e9c07e09
+  - uri: com:mdsol:depots:ffbf028a-1cfd-477a-97e6-3d30c0e108c9
+  - uri: com:mdsol:depots:e65a1748-a32b-4fa2-8b49-82ab48e4154d
+  - uri: com:mdsol:depots:3f039d39-1344-4fa8-98a8-cf52de922923
+  - uri: com:mdsol:depots:0cdbfd95-6ef7-4af9-bca6-9bd4fa4511a1
+  - uri: com:mdsol:depots:28c4461d-d4e3-4c24-a5be-3b61fd7c4b25
+  - uri: com:mdsol:depots:86ba7655-6835-40c7-bb58-10c3c2001dcd
+  - uri: com:mdsol:depots:b00f2870-b866-4c55-96d0-ad2be821a4c7
+  - uri: com:mdsol:depots:e951cb69-2a86-4218-8d61-c004a60e2fde
+  - uri: com:mdsol:depots:ef96668f-ba49-4664-8508-44890c82ad24
+  - uri: com:mdsol:depots:6fee4044-19b2-469e-a55b-017b99d25f77
+  - uri: com:mdsol:depots:4a56a21a-4481-48b4-a276-b6a764b844f2
+  - uri: com:mdsol:depots:a3e576f8-ef45-45b6-a77f-0033689d73fe
+  - uri: com:mdsol:depots:f23cf5d9-c10e-4d40-a051-f7f8e7491440
+  - uri: com:mdsol:depots:a8b9c48b-890d-41f6-a7c6-a4498fffce4f
+  - uri: com:mdsol:depots:5ce568da-5b61-41a2-a887-6b8f4d587561
+  - uri: com:mdsol:depots:a036e662-64a0-479e-ac37-a176b4235ff0
