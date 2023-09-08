@@ -1,22 +1,5 @@
 ---
 access:
-- name: External App Core Objects and MDM Reader
-  operations:
-  - read
-  - read_client_division_addresses
-  - read_client_division_organizations
-  - read_client_division_people
-  - read_client_division_scheme_assignments
-  - read_client_division_schemes
-  - read_client_divisions
-  - read_studies
-  - read_study_environment_assignments
-  - read_study_environment_countries
-  - read_study_environment_people
-  - read_study_environment_sites
-  - read_study_environments
-  - read_team_memberships
-  operables:
 - name: User Impersonator
   operations:
   - impersonate
