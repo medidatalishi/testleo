@@ -33,3 +33,4 @@ access:
   - read_unblinded
   operables:
   - uri: com:mdsol:depots:ffbf028a-1cfd-477a-97e6-3d30c0e108c9
+  - uri: com:mdsol:depots_collection:all
