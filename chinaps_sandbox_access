@@ -35,3 +35,9 @@ access:
   - uri: com:mdsol:depots:ffbf028a-1cfd-477a-97e6-3d30c0e108c9
   - uri: com:mdsol:depots_collection:all
   - uri: com:mdsol:depots:858ecff1-7ea9-40ed-866d-23a84bf896c4
+- name: Subjects Reader
+  operations:
+  - read
+  operables:
+  - uri: com:mdsol:subjects_collection:all
+
