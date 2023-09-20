@@ -38,6 +38,6 @@ access:
 - name: Subjects Reader
   operations:
   - read
+  - read_subjects
   operables:
   - uri: com:mdsol:subjects_collection:all
-
