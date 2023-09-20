@@ -35,9 +35,14 @@ access:
   - uri: com:mdsol:depots:ffbf028a-1cfd-477a-97e6-3d30c0e108c9
   - uri: com:mdsol:depots_collection:all
   - uri: com:mdsol:depots:858ecff1-7ea9-40ed-866d-23a84bf896c4
-- name: Subjects Reader
+- name: SubjectsServiceReader
   operations:
-  - read
+  - read_studies
   - read_subjects
+  - read_activation_codes
+  - read_self_enrollment_tokens
+  - read_subject_enrollments
+  - read_tou_dpn_agreements
   operables:
   - uri: com:mdsol:subjects_collection:all
+  - uri: com:mdsol:client_division_schemes_collection:all
