@@ -18,6 +18,7 @@ access:
   - read_team_memberships
   operables:
   - uri: com:mdsol:client_division_schemes_collection:all
+  - uri: com:mdsol:client_divisions_collection:all
 - name: User Impersonator
   operations:
   - impersonate
