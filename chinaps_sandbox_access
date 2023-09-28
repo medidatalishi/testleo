@@ -17,10 +17,12 @@ access:
   - read_study_environments
   - read_team_memberships
   - read_v2_client_divisions
+  - read_user_accessible_entities
   operables:
   - uri: com:mdsol:client_division_schemes_collection:all
   - uri: com:mdsol:client_divisions_collection:all
   - uri: com:mdsol:v2_client_divisions_collection:all
+  - uri: com:mdsol:user_accessible_entities:show
 - name: User Impersonator
   operations:
   - impersonate
