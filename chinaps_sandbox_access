@@ -23,6 +23,7 @@ access:
   - uri: com:mdsol:client_divisions_collection:all
   - uri: com:mdsol:v2_client_divisions_collection:all
   - uri: com:mdsol:users_collection:all
+  - uri: com:mdsol:study_environments_collection:all
 - name: User Impersonator
   operations:
   - impersonate
